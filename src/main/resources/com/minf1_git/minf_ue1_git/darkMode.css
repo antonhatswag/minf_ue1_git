@@ -1,0 +1,78 @@
+.background {
+    -fx-background-color: #1d1d1d;
+}
+
+.menu-bar {
+    -fx-background-color: derive(#1d1d1d,20%);
+}
+
+.menu-bar > .container > .menu-button {
+     -fx-text-fill: white;
+
+}
+.context-menu {
+    -fx-background-color: derive(#1d1d1d,50%);
+}
+
+.menu-bar > .container > .menu-button > .label {
+    -fx-text-fill: white;
+
+}
+
+.menu-bar-item :focused {
+    -fx-background-color:grey;
+    -fx-focus-color:derive(#1d1d1d,50%);
+
+}
+
+.menu-bar > .container > .menu-button:hover,
+.menu-bar > .container > .menu-button:focused,
+.menu-bar > .container > .menu-button:showing {
+    -fx-background-color:grey; -fx-my-menu-color-highlighted:derive(#1d1d1d,50%);
+}
+
+
+
+.menu-item:focused {
+    -fx-background-color:grey;
+    -fx-focus-color:derive(#1d1d1d,50%);
+}
+
+
+
+
+
+.menu-item .label {
+    -fx-text-fill: white;
+
+}
+
+
+
+.menu-bar .MenuItem {
+    -fx-font-size: 14pt;
+    -fx-font-family: "Segoe UI Light";
+    -fx-text-fill: white;
+    -fx-opacity: 0.9;
+}
+
+.separator .line {
+    -fx-background-color: black;
+    -fx-pref-height: 5;
+    -fx-border-color: null ;
+}
+
+
+
+#tulpe> .label {
+
+    -fx-graphic: url("tulpe.png");
+    -fx-graphic-size: 16px 16px;
+
+}
+#rose> .label {
+
+    -fx-graphic: url("rose.png");
+    -fx-graphic-size: 16px 16px;
+
+}

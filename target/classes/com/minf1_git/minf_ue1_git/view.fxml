@@ -3,14 +3,67 @@
 <?import javafx.geometry.Insets?>
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.layout.VBox?>
-
+<?import javafx.scene.control.*?>
 <?import javafx.scene.control.Button?>
-<VBox alignment="CENTER" spacing="20.0" xmlns:fx="http://javafx.com/fxml"
-      fx:controller="com.minf1_git.minf_ue1_git.Controller">
-    <padding>
-        <Insets bottom="20.0" left="20.0" right="20.0" top="20.0"/>
-    </padding>
+<?import javafx.scene.control.ToolBar?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.image.Image?>
+<VBox fx:id="rootVbox" prefHeight="-Infinity" prefWidth="-Infinity" xmlns:fx="http://javafx.com/fxml" fx:controller="com.minf1_git.minf_ue1_git.Controller" stylesheets="@darkMode.css">
 
-    <Label fx:id="welcomeText"/>
-    <Button text="Hello!" onAction="#onHelloButtonClick"/>
+    <MenuBar>
+        <menus>
+
+            <Menu text="File">
+                <items>
+                    <MenuItem fx:id="openFileMenuItem" text="Open"/>
+                    <MenuItem fx:id="saveFileMenuItem" text="Save"/>
+                </items>
+            </Menu>
+
+            <Menu text="Edit">
+                <items>
+                    <MenuItem fx:id="deleteMenuItem" text="Delete"/>
+                </items>
+            </Menu>
+
+            <Menu text="Help">
+                <items>
+                    <MenuItem fx:id="helpMenuItem" text="Help?"/>
+                </items>
+            </Menu>
+
+        </menus>
+    </MenuBar>
+    <Separator style="-fx-border-style: solid; -fx-border-width: 1px; -fx-padding: 0 -50 0 0;"></Separator>
+
+
+    <MenuBar>
+
+            <menus>
+                <Menu text="Tool: " >
+                    <items>
+                        <MenuItem fx:id="tulpe" text="Tulpe"/>
+                    </items>
+                    <items>
+                        <MenuItem fx:id="rose" text="Rose"/>
+                    </items>
+
+                </Menu>
+
+
+            </menus>
+    </MenuBar>
+    <Separator style="-fx-border-style: solid; -fx-border-width: 1px; -fx-padding: 0 -50 0 0;"></Separator>
+    <ImageView>
+        <Image url="https://i.imgur.com/2iVW4ch.png"></Image>
+    </ImageView>
+
+
+
+
+
+
+
 </VBox>
