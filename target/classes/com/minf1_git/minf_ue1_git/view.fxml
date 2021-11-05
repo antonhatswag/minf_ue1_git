@@ -10,6 +10,8 @@
 <?import javafx.scene.layout.HBox?>
 <?import javafx.scene.image.ImageView?>
 <?import javafx.scene.image.Image?>
+<?import javafx.collections.FXCollections?>
+<?import java.lang.String?>
 <VBox fx:id="rootVbox" prefHeight="-Infinity" prefWidth="-Infinity" xmlns:fx="http://javafx.com/fxml" fx:controller="com.minf1_git.minf_ue1_git.Controller" stylesheets="@darkMode.css">
 
     <MenuBar>
@@ -36,18 +38,37 @@
 
         </menus>
     </MenuBar>
-    <Separator style="-fx-border-style: solid; -fx-border-width: 1px; -fx-padding: 0 -50 0 0;"></Separator>
+
 
 
     <MenuBar>
 
             <menus>
-                <Menu text="Tool: " >
+                <Menu text="> Blumen " >
                     <items>
+                        <MenuItem fx:id="grass" text="Grass"/>
                         <MenuItem fx:id="tulpe" text="Tulpe"/>
-                    </items>
-                    <items>
                         <MenuItem fx:id="rose" text="Rose"/>
+                        <MenuItem fx:id="orchidee" text="Orchidee"/>
+                        <MenuItem fx:id="sunflower" text="Sunflower"/>
+                        <MenuItem fx:id="water" text="Gießen"/>
+
+
+
+                    </items>
+
+                </Menu>
+                <Menu text="> Terraforming ">
+                    <items>
+                        <MenuItem fx:id="groundlevelup" text="Boden Erhöhen"/>
+                        <MenuItem fx:id="lowerlevel" text="Boden Erniedrigen"/>
+                        <MenuItem fx:id="sand" text="Sand Platzieren"/>
+                        <MenuItem fx:id="plates" text="Platten platzieren"/>
+                        <MenuItem fx:id="bodendecker" text="Bodendecker platzieren"/>
+                        <MenuItem fx:id="delete" text="Entfernen"/>
+
+
+
                     </items>
 
                 </Menu>
@@ -55,15 +76,13 @@
 
             </menus>
     </MenuBar>
-    <Separator style="-fx-border-style: solid; -fx-border-width: 1px; -fx-padding: 0 -50 0 0;"></Separator>
+
+
+
+
     <ImageView>
-        <Image url="https://i.imgur.com/2iVW4ch.png"></Image>
+        <Image url="@garden.png" ></Image>
     </ImageView>
-
-
-
-
-
 
 
 </VBox>

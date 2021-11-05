@@ -1,6 +1,9 @@
 .background {
     -fx-background-color: #1d1d1d;
 }
+.hbox{
+    -fx-background-color: #1d1d1d
+}
 
 .menu-bar {
     -fx-background-color: derive(#1d1d1d,20%);
@@ -76,3 +79,57 @@
     -fx-graphic-size: 16px 16px;
 
 }
+
+#water> .label {
+
+    -fx-graphic: url("water.png");
+    -fx-graphic-size: 16px 16px;}
+
+#grass> .label {
+
+    -fx-graphic: url("grass.png");
+    -fx-graphic-size: 16px 16px;}
+
+#orchidee> .label {
+
+    -fx-graphic: url("orchidee.png");
+    -fx-graphic-size: 16px 16px;}
+
+#sunflower> .label {
+
+    -fx-graphic: url("sunflower.png");
+    -fx-graphic-size: 16px 16px;}
+
+
+#groundlevelup> .label {
+
+    -fx-graphic: url("groundlevelup.png");
+    -fx-graphic-size: 16px 16px;}
+
+#bodendecker> .label {
+
+    -fx-graphic: url("bodendecker.png");
+    -fx-graphic-size: 16px 16px;}
+
+#plates> .label {
+
+    -fx-graphic: url("plates.png");
+    -fx-graphic-size: 16px 16px;}
+
+#sand> .label {
+
+    -fx-graphic: url("sand.png");
+    -fx-graphic-size: 16px 16px;}
+
+#delete> .label {
+
+    -fx-graphic: url("delete.png");
+    -fx-graphic-size: 16px 16px;}
+
+#lowerlevel> .label {
+
+    -fx-graphic: url("lowerlevel.png");
+    -fx-graphic-size: 16px 16px;}
+
+
+
