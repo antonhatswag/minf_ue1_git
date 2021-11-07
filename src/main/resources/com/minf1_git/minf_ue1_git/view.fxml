@@ -12,39 +12,54 @@
 <?import javafx.scene.image.Image?>
 <?import javafx.collections.FXCollections?>
 <?import java.lang.String?>
+<?import javafx.scene.layout.Region?>
 <VBox fx:id="rootVbox" prefHeight="-Infinity" prefWidth="-Infinity" xmlns:fx="http://javafx.com/fxml" fx:controller="com.minf1_git.minf_ue1_git.Controller" stylesheets="@darkMode.css">
-
+    <HBox style="-fx-background-color: #1d1d1d" >
     <MenuBar>
         <menus>
 
-            <Menu text="File">
+            <Menu text="File    |">
                 <items>
                     <MenuItem fx:id="openFileMenuItem" text="Open"/>
                     <MenuItem fx:id="saveFileMenuItem" text="Save"/>
                 </items>
             </Menu>
 
-            <Menu text="Edit">
+            <Menu text="Edit    |">
                 <items>
                     <MenuItem fx:id="deleteMenuItem" text="Delete"/>
                 </items>
             </Menu>
 
+            <Menu text="Settings">
+                <items>
+                    <MenuItem fx:id="settings" text="Settings"/>
+                </items>
+            </Menu>
+
+        </menus>
+
+    </MenuBar >
+
+        <Region HBox.hgrow="ALWAYS">
+
+        </Region>
+
+        <MenuBar style="-fx-alignment: RIGHT">
             <Menu text="Help">
                 <items>
                     <MenuItem fx:id="helpMenuItem" text="Help?"/>
                 </items>
             </Menu>
-
-        </menus>
-    </MenuBar>
+        </MenuBar>
+    </HBox>
 
 
 
     <MenuBar>
 
             <menus>
-                <Menu text="> Blumen " >
+                <Menu text="> Pflanzen " >
                     <items>
                         <MenuItem fx:id="grass" text="Grass"/>
                         <MenuItem fx:id="tulpe" text="Tulpe"/>
@@ -81,7 +96,7 @@
 
 
     <ImageView>
-        <Image url="@garden.png" ></Image>
+        <Image url="@background.png" ></Image>
     </ImageView>
 
 
