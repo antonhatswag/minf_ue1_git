@@ -14,7 +14,7 @@
 <?import java.lang.String?>
 <?import javafx.scene.layout.Region?>
 <VBox fx:id="rootVbox" prefHeight="-Infinity" prefWidth="-Infinity" xmlns:fx="http://javafx.com/fxml" fx:controller="com.minf1_git.minf_ue1_git.Controller" stylesheets="@darkMode.css">
-    <HBox style="-fx-background-color: #1d1d1d" >
+    <HBox style="-fx-background-color: darkseagreen" >
     <MenuBar>
         <menus>
 
@@ -96,7 +96,7 @@
 
 
     <ImageView>
-        <Image url="@background.png" ></Image>
+        <Image url="@background.jpeg" ></Image>
     </ImageView>
 
 
